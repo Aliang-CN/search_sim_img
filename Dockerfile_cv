@@ -1,0 +1,9 @@
+FROM python:3.7.11
+
+RUN apt update && apt install -y g++ python-dev libsasl2-dev libgl1 ffmpeg libsm6 libxext6 vim
+COPY requirement.txt /tmp/requirement.txt
+COPY whl/stary_data_sources-0.0.1-py3-none-any.whl /tmp/stary_data_sources-0.0.1-py3-none-any.whl
+COPY whl/vec_engine-0.0.1-py3-none-any.whl /tmp/vec_engine-0.0.1-py3-none-any.whl
+COPY whl/lpips-0.1.4-py3-none-any.whl /tmp/lpips-0.1.4-py3-none-any.whl
+RUN /usr/local/bin/python -m pip install --upgrade pip \
+    && pip install -r /tmp/requirement.txt

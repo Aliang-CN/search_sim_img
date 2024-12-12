@@ -1,0 +1,1 @@
+docker pull registry.cn-guangzhou.aliyuncs.com/stary_aliang/search_sim_img:0.0.3-beta

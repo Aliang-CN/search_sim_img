@@ -1,0 +1,11 @@
+grpcio-tools==1.22.0
+protobuf==3.19.0
+tqdm>=4.28.1
+requests
+scikit-learn
+pandas
+opencv-python
+torch==1.11.0
+torchvision==0.12.0
+torchaudio==0.11.0
+scipy
